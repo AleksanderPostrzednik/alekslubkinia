@@ -1,0 +1,80 @@
+:root {
+  --bordo:#8d5a5a;
+  --ivory:#faf7f6;
+  --turquoise:#2fa8a8;
+  --gold:#c9a46b;
+}
+* {box-sizing:border-box;margin:0;padding:0;}
+body {
+  font-family:'Inter',sans-serif;
+  background:var(--ivory);
+  color:#333;
+  line-height:1.6;
+  scroll-behavior:smooth;
+}
+nav {
+  position:fixed;
+  top:0;left:0;right:0;
+  background:var(--ivory);
+  padding:.5rem 1rem;
+  display:flex;
+  gap:1rem;
+  justify-content:center;
+  box-shadow:0 2px 4px rgba(0,0,0,.1);
+  z-index:100;
+}
+nav a {
+  color:var(--bordo);
+  text-decoration:none;
+  padding:.25rem .5rem;
+  font-weight:600;
+}
+nav a.active {border-bottom:2px solid var(--turquoise);}
+.hero {
+  background-image:url('paper.png');
+  text-align:center;
+  padding:8rem 1rem 4rem;
+  font-family:'Playfair Display',serif;
+}
+.hero h1 {font-size:3rem;color:var(--bordo);margin-bottom:.5rem;}
+.hero .date {font-size:1.5rem;color:var(--gold);}
+.hero .quote {font-style:italic;margin:1rem 0 2rem;}
+.hero button {
+  background:var(--turquoise);
+  color:#fff;
+  border:none;
+  padding:.75rem 1.5rem;
+  border-radius:4px;
+  cursor:pointer;
+}
+section {padding:4rem 1rem;}
+.story{background-image:url('paper.png');}
+.story h2{font-family:'Playfair Display',serif;color:var(--bordo);margin-bottom:2rem;text-align:center;}
+.timeline{list-style:none;max-width:700px;margin:auto;}
+.timeline li{margin-bottom:1.5rem;display:flex;align-items:flex-start;gap:.5rem;}
+.timeline .tl-img{font-size:1.5rem;}
+.ceremony h2, .gallery h2, .rsvp h2, .gifts h2{font-family:'Playfair Display',serif;color:var(--bordo);text-align:center;margin-bottom:1rem;}
+.ceremony .venue{margin-bottom:2rem;text-align:center;}
+.ceremony iframe{width:100%;height:300px;border:0;}
+.hotel-gallery{display:flex;gap:.5rem;justify-content:center;}
+.hotel-gallery img{width:30%;height:auto;border-radius:4px;cursor:pointer;}
+.schedule{list-style:none;display:flex;flex-direction:column;gap:.5rem;max-width:400px;margin:1rem auto;text-align:left;}
+.schedule .time{color:var(--gold);margin-right:.5rem;}
+.gallery .masonry{column-count:1;column-gap:.5rem;}
+.gallery .gal-img{width:100%;margin-bottom:.5rem;border-radius:4px;cursor:pointer;}
+@media(min-width:600px){
+  .gallery .masonry{column-count:2;}
+}
+@media(min-width:900px){
+  .gallery .masonry{column-count:3;}
+}
+.lightbox{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);display:flex;align-items:center;justify-content:center;z-index:1000;}
+.lightbox img{max-width:90%;max-height:90%;}
+.accordion{max-width:600px;margin:auto;}
+.acc-btn{width:100%;text-align:left;background:var(--bordo);color:#fff;padding:.75rem;margin-bottom:.25rem;border:none;cursor:pointer;}
+.acc-btn.open{background:var(--turquoise);}
+.acc-content{overflow:hidden;max-height:0;background:var(--ivory);transition:max-height .3s ease;padding:0 .75rem;}
+.acc-content p{padding:.5rem 0;}
+footer{text-align:center;padding:2rem 1rem;background:var(--bordo);color:#fff;}
+footer a{color:var(--gold);margin:0 .5rem;}
+footer .hashtag{margin-top:.5rem;font-style:italic;color:var(--turquoise);}

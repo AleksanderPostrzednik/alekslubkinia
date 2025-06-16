@@ -1,26 +1,153 @@
-<!-- wedding landing page minimal starter -->
 <!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>Alek & Kinia – Zaproszenie Ślubne</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:2rem;line-height:1.5;
-         display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;background:#faf7f6}
-    h1{font-size:2.2rem;margin-top:0;color:#8d5a5a}
-    p.lead{font-size:1.25rem;margin-bottom:2rem}
-    footer{margin-top:3rem;font-size:.9rem;color:#666}
-    button{padding:.8rem 1.6rem;border:none;border-radius:8px;background:#8d5a5a;color:#fff;font-size:1rem;cursor:pointer}
-    button:hover{opacity:.9}
-    iframe{max-width:100%;border:none}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aleksander & Kinga – Zaproszenie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Alek&nbsp;+&nbsp;Kinia</h1>
-  <p class="lead">Z radością zapraszamy Cię na nasz ślub<br>4 października 2025&nbsp;•&nbsp;Kraków</p>
-  <!-- HERE FORM (Tally embed script) -->
-  <button onclick="window.location='#rsvp'">Potwierdź obecność</button>
-  <footer>© 2025 Alek & Kinia • Do zobaczenia!</footer>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#story">Nasza historia</a>
+    <a href="#ceremony">Ceremonia</a>
+    <a href="#gallery">Galeria</a>
+    <a href="#rsvp">RSVP</a>
+    <a href="#gifts">Prezentownik</a>
+  </nav>
+  <header id="hero" class="hero">
+    <h1>Aleksander &amp; Kinga</h1>
+    <p class="date">4 X 2025</p>
+    <p class="quote">"Miłość wszystko zwycięża"</p>
+    <button data-scroll="#rsvp">Potwierdź obecność</button>
+  </header>
+  <section id="story" class="story">
+    <h2>Nasza historia</h2>
+    <ul class="timeline">
+      <li>
+        <span class="tl-img">🌿</span>
+        <p>Poznaliśmy się w Sielpii Wielkiej na obozie z niepełnosprawnymi we wspólnocie Łanowa.</p>
+      </li>
+      <li>
+        <span class="tl-img">⛰️</span>
+        <p>Pierwsza randka w górach Świętokrzyskich.</p>
+      </li>
+      <li>
+        <span class="tl-img">✈️</span>
+        <p>Wspólne podróże umocniły naszą więź i otworzyły oczy na piękno świata.</p>
+      </li>
+      <li>
+        <span class="tl-img">💍</span>
+        <p>Oświadczyny w Rzymie były jak z bajki, powiedziała TAK!</p>
+      </li>
+    </ul>
+  </section>
+  <section id="ceremony" class="ceremony">
+    <h2>Ceremonia &amp; Wesele</h2>
+    <div class="venue">
+      <h3>Kościół Bożego Ciała</h3>
+      <p>ul. Bożego Ciała 26, Kraków</p>
+      <iframe src="https://maps.google.com/maps?q=ko%C5%9Bci%C3%B3%C5%82%20bo%C5%BCego%20cia%C5%82a%20krak%C3%B3w&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    </div>
+    <div class="venue">
+      <h3>Hotel Kazimierz</h3>
+      <p>ul. Miodowa 16, Kraków</p>
+      <div class="hotel-gallery">
+        <!-- Dodaj zdjecia w katalogu img -->
+        <img src="img/hotel-1.jpg" alt="Hotel exterior">
+        <img src="img/hotel-2.jpg" alt="Hotel courtyard">
+        <img src="img/hotel-room.jpg" alt="Pokój hotelowy">
+      </div>
+    </div>
+    <h3>Harmonogram</h3>
+    <ul class="schedule">
+      <li><span class="time">14:30</span> <span>Przyjazd gości</span></li>
+      <li><span class="time">15:00</span> <span>Ceremonia w kościele</span></li>
+      <li><span class="time">17:00</span> <span>Przyjęcie w hotelu</span></li>
+      <li><span class="time">21:00</span> <span>Tort weselny</span></li>
+    </ul>
+  </section>
+  <section id="gallery" class="gallery">
+    <h2>Galeria</h2>
+    <div class="masonry">
+      <!-- Dodaj zdjecia w katalogu img -->
+      <img class="gal-img" src="img/bazylika.jpg" alt="Bazylika">
+      <img class="gal-img" src="img/hotel-1.jpg" alt="Hotel exterior">
+      <img class="gal-img" src="img/hotel-2.jpg" alt="Hotel courtyard">
+      <img class="gal-img" src="img/hotel-room.jpg" alt="Pokój hotelowy">
+      <img class="gal-img" src="img/hotel-1.jpg" alt="Hotel exterior">
+      <img class="gal-img" src="img/hotel-2.jpg" alt="Hotel courtyard">
+      <img class="gal-img" src="img/bazylika.jpg" alt="Bazylika">
+      <img class="gal-img" src="img/hotel-room.jpg" alt="Pokój hotelowy">
+    </div>
+  </section>
+  <section id="rsvp" class="rsvp">
+    <h2>Potwierdzenie obecności</h2>
+    <script data-tally-src="https://tally.so/widgets/embed.js"></script>
+    <div data-tally-embed="mnQ5b8" data-tally-width="100%" data-tally-height="520" data-tally-redirect="/thanks.html"></div>
+  </section>
+  <section id="gifts" class="gifts">
+    <h2>Prezentownik &amp; FAQ</h2>
+    <div class="accordion">
+      <div class="acc-item">
+        <button class="acc-btn">Lista prezentów</button>
+        <div class="acc-content"><p>Nasza lista prezentów dostępna jest <a href="#">tutaj</a>.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-btn">Dress code</button>
+        <div class="acc-content"><p>Prosimy o strój smart-casual.</p></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Dziękujemy, że jesteście z nami! 💕</p>
+    <p>
+      <a href="https://instagram.com/alekkinia">Instagram</a>
+      <a href="mailto:mail@example.com">E-mail</a>
+    </p>
+    <p class="hashtag">#AleKinaWedding</p>
+  </footer>
+  <script>
+  // smooth scroll
+  document.querySelectorAll('nav a, button[data-scroll]').forEach(el => {
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      const target = el.getAttribute('href') || el.dataset.scroll;
+      document.querySelector(target).scrollIntoView({behavior:'smooth'});
+    });
+  });
+  // scroll spy
+  const sections = document.querySelectorAll('section,header');
+  const navLinks = document.querySelectorAll('nav a');
+  window.addEventListener('scroll', () => {
+    let index=sections.length;
+    while(--index&&window.scrollY+50<sections[index].offsetTop){}
+    navLinks.forEach((link)=>link.classList.remove('active'));
+    navLinks[index].classList.add('active');
+  });
+  // lightbox
+  const imgs=document.querySelectorAll('.gal-img');
+  imgs.forEach(img=>{
+    img.addEventListener('click',()=>{
+      const lb=document.createElement('div');
+      lb.className='lightbox';
+      const clone=img.cloneNode();
+      lb.appendChild(clone);
+      lb.addEventListener('click',()=>lb.remove());
+      document.body.appendChild(lb);
+    });
+  });
+  // accordion
+  document.querySelectorAll('.acc-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      btn.classList.toggle('open');
+      const content=btn.nextElementSibling;
+      content.style.maxHeight= content.style.maxHeight ? null : content.scrollHeight+'px';
+    });
+  });
+  </script>
 </body>
 </html>
