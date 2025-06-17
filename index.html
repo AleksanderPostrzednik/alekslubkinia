@@ -15,8 +15,7 @@
     <a href="#story">Nasza historia</a>
     <a href="#ceremony">Ceremonia</a>
     <a href="#gallery">Galeria</a>
-    <a href="#rsvp">RSVP</a>
-    <a href="#gifts">Prezentownik</a>
+    <a href="#rsvp">Potwierdź obecność</a>
   </nav>
   <header id="hero" class="hero">
     <h1>Aleksander &amp; Kinga</h1>
@@ -86,21 +85,21 @@
   </section>
   <section id="rsvp" class="rsvp">
     <h2>Potwierdzenie obecności</h2>
-    <script data-tally-src="https://tally.so/widgets/embed.js"></script>
-    <div data-tally-embed="mnQ5b8" data-tally-width="100%" data-tally-height="520" data-tally-redirect="/thanks.html"></div>
-  </section>
-  <section id="gifts" class="gifts">
-    <h2>Prezentownik &amp; FAQ</h2>
-    <div class="accordion">
-      <div class="acc-item">
-        <button class="acc-btn">Lista prezentów</button>
-        <div class="acc-content"><p>Nasza lista prezentów dostępna jest <a href="#">tutaj</a>.</p></div>
-      </div>
-      <div class="acc-item">
-        <button class="acc-btn">Dress code</button>
-        <div class="acc-content"><p>Prosimy o strój smart-casual.</p></div>
-      </div>
-    </div>
+    <form action="mailto:mail@example.com" method="post" enctype="text/plain" class="rsvp-form">
+      <label>Imię i nazwisko
+        <input type="text" name="name" required>
+      </label>
+      <label>Czy będziesz z nami?
+        <select name="attendance" required>
+          <option value="Tak">Tak</option>
+          <option value="Nie">Nie</option>
+        </select>
+      </label>
+      <label>Liczba osób towarzyszących
+        <input type="number" name="guests" min="0" value="0">
+      </label>
+      <button type="submit">Wyślij</button>
+    </form>
   </section>
   <footer>
     <p>Dziękujemy, że jesteście z nami! 💕</p>
@@ -138,14 +137,6 @@
       lb.appendChild(clone);
       lb.addEventListener('click',()=>lb.remove());
       document.body.appendChild(lb);
-    });
-  });
-  // accordion
-  document.querySelectorAll('.acc-btn').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      btn.classList.toggle('open');
-      const content=btn.nextElementSibling;
-      content.style.maxHeight= content.style.maxHeight ? null : content.scrollHeight+'px';
     });
   });
   </script>
