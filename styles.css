@@ -171,6 +171,7 @@ iframe {
   display: inline-block;
   background: var(--clr-main);
   color: #fff;
+  margin: 1rem 0;
   padding: 1rem 2rem;
   border-radius: var(--radius);
   text-decoration: none;
@@ -179,6 +180,14 @@ iframe {
 }
 .rsvp-button:hover {
   background: var(--clr-turk);
+}
+/* Styl dla nagłówka RSVP */
+.rsvp-title {
+  font-family: 'Playfair Display', serif;
+  color: #333;                        /* ciemny, kontrastowy kolor */
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 /* ---------- LIGHTBOX ---------- */
@@ -227,4 +236,36 @@ footer a:hover {
   .photo-grid {
     grid-template-columns: repeat(3,1fr);
   }
+}
+
+/* ---------- HERO / Scroll Button (Dowiedz się więcej) ---------- */
+.scroll-button {
+  margin-top: 1.5rem;                  /* odstęp od cytatu */
+  background: var(--clr-gold);         /* złoty przycisk */
+  color: #fff;                         /* biały tekst */
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1.75rem;            /* pionowo / poziomo */
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.scroll-button:hover {
+  background: var(--clr-main);         /* na bordowy */
+  transform: translateY(-2px);         /* lekko do góry */
+}
+
+.scroll-button::after {
+  content: " ↓";                       /* subtelna strzałka */
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+
+.scroll-button:hover::after {
+  transform: translateY(3px);
 }
