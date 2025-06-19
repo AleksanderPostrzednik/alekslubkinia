@@ -11,9 +11,15 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Edytuj tutaj -->
-  <header class="hero">
-    <h1>Aleks &amp; Kinga</h1>
+  <nav>
+    <a href="#hero">Start</a>
+    <a href="#story">Historia</a>
+    <a href="#ceremony">Ceremonia</a>
+    <a href="#gallery">Galeria</a>
+    <a href="#rsvp">Potwierdź</a>
+  </nav>
+  <header id="hero" class="hero">
+    <h1>Ślub Alek &amp; Kinia</h1>
     <p class="date">[[DATA_ŚLUBU]]</p>
     <p class="quote">"Człowiek staje się prawdziwie wolny przez bezinteresowny dar z siebie"</p>
     <button data-scroll="#rsvp">RSVP</button>
@@ -24,24 +30,20 @@
     <h2>Nasza historia</h2>
     <div class="timeline">
       <div class="event">
-        <span class="event-date">[[DATA]]</span>
-        <p>[[Opis pierwszego wydarzenia]]</p>
+        <span class="event-date">2019</span>
+        <p>Poznaliśmy się w Sielpii Wielkiej na obozie z niepełnosprawnymi we wspólnocie Łanowa.</p>
       </div>
       <div class="event">
-        <span class="event-date">[[DATA]]</span>
-        <p>[[Opis drugiego wydarzenia]]</p>
+        <span class="event-date">2019</span>
+        <p>Pierwsza randka w górach Świętokrzyskich.</p>
       </div>
       <div class="event">
-        <span class="event-date">[[DATA]]</span>
-        <p>[[Opis trzeciego wydarzenia]]</p>
+        <span class="event-date">2020-2024</span>
+        <p>Wspólne podróże umocniły naszą więź i otworzyły oczy na piękno świata.</p>
       </div>
       <div class="event">
-        <span class="event-date">[[DATA]]</span>
-        <p>[[Opis czwartego wydarzenia]]</p>
-      </div>
-      <div class="event">
-        <span class="event-date">[[DATA]]</span>
-        <p>[[Opis piątego wydarzenia]]</p>
+        <span class="event-date">2024</span>
+        <p>Oświadczyny w Rzymie w roku Jubileuszowym!</p>
       </div>
     </div>
   </section>
@@ -49,28 +51,42 @@
   <!-- Edytuj tutaj -->
   <section id="ceremony">
     <h2>Ceremonia &amp; Wesele</h2>
-    <p>Kościół Bożego Ciała 26 / Hotel Kazimierz, ul. Miodowa 16</p>
-    <iframe src="https://maps.google.com/maps?q=Bo%C5%Bcego%20Cia%C5%82a%2026%20Krak%C3%B3w&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    <p>Kościół Bożego Ciała, ul. Bożego Ciała 26</p>
+    <iframe src="https://maps.google.com/maps?q=Bo%C5%Bzego%20Cia%C5%82a%2026%20Krak%C3%B3w&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
     <div class="photo-grid">
-      <img src="img/church.jpg" alt="Kościół">
-      <img src="img/hotel.jpg" alt="Hotel">
-      <img src="img/hotel_room.jpg" alt="Pokój hotelowy">
+      <figure>
+        <img src="img/church1.png" alt="Kościół Bożego Ciała">
+        <figcaption>Kościół Bożego Ciała</figcaption>
+      </figure>
+      <figure>
+        <img src="img/church2.png" alt="Wnętrze kościoła">
+        <figcaption>Wnętrze kościoła</figcaption>
+      </figure>
+    </div>
+    <p>Hotel Kazimierz I, ul. Miodowa 16</p>
+    <div class="photo-grid">
+      <figure>
+        <img src="img/hotel1.png" alt="Hotel Kazimierz I">
+        <figcaption>Hotel Kazimierz I</figcaption>
+      </figure>
+      <figure>
+        <img src="img/hotel2.png" alt="Pokój w hotelu">
+        <figcaption>Pokój w hotelu</figcaption>
+      </figure>
     </div>
   </section>
 
   <!-- Edytuj tutaj -->
   <section id="gallery">
     <h2>Galeria</h2>
-    <div class="masonry">
+    <div class="gallery-grid">
       <!-- Dodaj zdjecia w katalogu img -->
-      <img class="gal-img" src="img/bozeCialo.jpg" alt="Bazylika">
+      <img class="gal-img" src="img/bozeCialo.jpg" alt="Bazylika Bożego Ciała">
+      <img class="gal-img" src="img/bozeCialo2.jpg" alt="Bazylika Bożego Ciała">
       <img class="gal-img" src="img/JustTheTwoOFUs.jpg" alt="My">
-      <img class="gal-img" src="img/proposal.jpg" alt="Proposal">
-      <img class="gal-img" src="img/hotel-room.jpg" alt="Pokój hotelowy">
-      <img class="gal-img" src="img/hotel-1.jpg" alt="Hotel exterior">
-      <img class="gal-img" src="img/hotel-2.jpg" alt="Hotel courtyard">
-      <img class="gal-img" src="img/bozeCialo2.jpg" alt="Bazylika">
-      <img class="gal-img" src="img/hotel-room.jpg" alt="Pokój hotelowy">
+      <img class="gal-img" src="img/proposal.jpg" alt="Oświadczyny">
+      <img class="gal-img" src="img/hotel1.png" alt="Hotel Kazimierz I">
+      <img class="gal-img" src="img/hotel2.png" alt="Hotel Kazimierz I">
     </div>
     <div id="lightbox-overlay"></div>
   </section>
@@ -79,7 +95,7 @@
   <section id="rsvp">
     <h2>Potwierdź obecność</h2>
     <p>Cieszymy się, że będziesz z nami w tym wyjątkowym dniu.</p>
-    <!-- TALLY EMBED START: <script data-tally-src="..."></script><div data-tally-embed="[[FORM_ID]]"></div> -->
+    <p><a class="rsvp-button" href="https://tally.so/r/3jqL6Q" target="_blank">Wypełnij formularz RSVP</a></p>
   </section>
 
   <!-- Edytuj tutaj -->
@@ -90,9 +106,11 @@
   </footer>
 
   <script>
-  document.querySelectorAll('button[data-scroll]').forEach(btn => {
-    btn.addEventListener('click', e => {
-      document.querySelector(btn.dataset.scroll).scrollIntoView({behavior:'smooth'});
+  document.querySelectorAll('button[data-scroll], nav a').forEach(el => {
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      const target = el.dataset.scroll || el.getAttribute('href');
+      document.querySelector(target).scrollIntoView({behavior:'smooth'});
     });
   });
   const gallery=document.querySelectorAll('.gallery-grid img');
