@@ -3,142 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aleksander & Kinga – Zaproszenie</title>
+  <meta name="description" content="Zaproszenie ślubne Aleks & Kinga">
+  <title>Aleks &amp; Kinga</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <a href="#hero">Home</a>
-    <a href="#story">Nasza historia</a>
-    <a href="#ceremony">Ceremonia</a>
-    <a href="#gallery">Galeria</a>
-    <a href="#rsvp">Potwierdź obecność</a>
-  </nav>
-  <header id="hero" class="hero">
-    <h1>Aleksander &amp; Kinga</h1>
-    <p class="date">4 X 2025</p>
-    <p class="quote">"Człowiek staje się prawdziwie WOLNY przez bezinteresowny dar z siebie"</p>
-    <button data-scroll="#rsvp">Potwierdź obecność</button>
+  <!-- Edytuj tutaj -->
+  <header class="hero">
+    <h1>Aleks &amp; Kinga</h1>
+    <p class="date">[[DATA_ŚLUBU]]</p>
+    <p class="quote">"Człowiek staje się prawdziwie wolny przez bezinteresowny dar z siebie"</p>
+    <button data-scroll="#rsvp">RSVP</button>
   </header>
-  <section id="story" class="story">
+
+  <!-- Edytuj tutaj -->
+  <section id="story">
     <h2>Nasza historia</h2>
-    <ul class="timeline">
-      <li>
-        <span class="tl-img">🌿</span>
-        <p>Poznaliśmy się w Sielpii Wielkiej na obozie z niepełnosprawnymi we wspólnocie Łanowa.</p>
-      </li>
-      <li>
-        <span class="tl-img">⛰️</span>
-        <p>Pierwsza randka w górach Świętokrzyskich.</p>
-      </li>
-      <li>
-        <span class="tl-img">✈️</span>
-        <p>Wspólne podróże umocniły naszą więź i otworzyły oczy na piękno świata.</p>
-      </li>
-      <li>
-        <span class="tl-img">💍</span>
-        <p>Oświadczyny w Rzymie w roku Jubileuszowym!</p>
-      </li>
-    </ul>
-  </section>
-  <section id="ceremony" class="ceremony">
-    <h2>Ceremonia &amp; Wesele</h2>
-    <div class="venue">
-      <h3>Kościół Bożego Ciała</h3>
-      <p>ul. Bożego Ciała 26, Kraków</p>
-      <iframe src="https://maps.google.com/maps?q=ko%C5%9Bci%C3%B3%C5%82%20bo%C5%BCego%20cia%C5%82a%20krak%C3%B3w&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
-    </div>
-    <div class="venue">
-      <h3>Hotel Kazimierz</h3>
-      <p>ul. Miodowa 16, Kraków</p>
-      <div class="hotel-gallery">
-        <!-- Dodaj zdjecia w katalogu img -->
-        <img src="img/hotel-1.jpg" alt="Hotel exterior">
-        <img src="img/hotel-2.jpg" alt="Hotel courtyard">
-        <img src="img/hotel-room.jpg" alt="Pokój hotelowy">
+    <div class="timeline">
+      <div class="event">
+        <span class="event-date">[[DATA]]</span>
+        <p>[[Opis pierwszego wydarzenia]]</p>
+      </div>
+      <div class="event">
+        <span class="event-date">[[DATA]]</span>
+        <p>[[Opis drugiego wydarzenia]]</p>
+      </div>
+      <div class="event">
+        <span class="event-date">[[DATA]]</span>
+        <p>[[Opis trzeciego wydarzenia]]</p>
+      </div>
+      <div class="event">
+        <span class="event-date">[[DATA]]</span>
+        <p>[[Opis czwartego wydarzenia]]</p>
+      </div>
+      <div class="event">
+        <span class="event-date">[[DATA]]</span>
+        <p>[[Opis piątego wydarzenia]]</p>
       </div>
     </div>
-    <h3>Harmonogram</h3>
-    <ul class="schedule">
-      <li><span class="time">14:30</span> <span>Przyjazd gości</span></li>
-      <li><span class="time">15:00</span> <span>Ceremonia w kościele</span></li>
-      <li><span class="time">17:00</span> <span>Przyjęcie w hotelu</span></li>
-      <li><span class="time">21:00</span> <span>Tort weselny</span></li>
-    </ul>
   </section>
-  <section id="gallery" class="gallery">
-    <h2>Galeria</h2>
-    <div class="masonry">
-      <!-- Dodaj zdjecia w katalogu img -->
-      <img class="gal-img" src="img/bazylika.jpg" alt="Bazylika">
-      <img class="gal-img" src="img/hotel-1.jpg" alt="Hotel exterior">
-      <img class="gal-img" src="img/hotel-2.jpg" alt="Hotel courtyard">
-      <img class="gal-img" src="img/hotel-room.jpg" alt="Pokój hotelowy">
-      <img class="gal-img" src="img/hotel-1.jpg" alt="Hotel exterior">
-      <img class="gal-img" src="img/hotel-2.jpg" alt="Hotel courtyard">
-      <img class="gal-img" src="img/bazylika.jpg" alt="Bazylika">
-      <img class="gal-img" src="img/hotel-room.jpg" alt="Pokój hotelowy">
+
+  <!-- Edytuj tutaj -->
+  <section id="ceremony">
+    <h2>Ceremonia &amp; Wesele</h2>
+    <p>Kościół Bożego Ciała 26 / Hotel Kazimierz, ul. Miodowa 16</p>
+    <iframe src="https://maps.google.com/maps?q=Bo%C5%Bcego%20Cia%C5%82a%2026%20Krak%C3%B3w&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    <div class="photo-grid">
+      <img src="img/church.jpg" alt="Kościół">
+      <img src="img/hotel.jpg" alt="Hotel">
+      <img src="img/hotel_room.jpg" alt="Pokój hotelowy">
     </div>
   </section>
-  <section id="rsvp" class="rsvp">
-    <h2>Potwierdzenie obecności</h2>
-    <form action="mailto:mail@example.com" method="post" enctype="text/plain" class="rsvp-form">
-      <label>Imię i nazwisko
-        <input type="text" name="name" required>
-      </label>
-      <label>Czy będziesz z nami?
-        <select name="attendance" required>
-          <option value="Tak">Tak</option>
-          <option value="Nie">Nie</option>
-        </select>
-      </label>
-      <label>Liczba osób towarzyszących
-        <input type="number" name="guests" min="0" value="0">
-      </label>
-      <button type="submit">Wyślij</button>
-    </form>
+
+  <!-- Edytuj tutaj -->
+  <section id="gallery">
+    <h2>Galeria</h2>
+    <div class="gallery-grid">
+      <img src="img/photo1.jpg" alt="">
+      <img src="img/photo2.jpg" alt="">
+      <img src="img/photo3.jpg" alt="">
+      <img src="img/photo4.jpg" alt="">
+      <img src="img/photo5.jpg" alt="">
+      <img src="img/photo6.jpg" alt="">
+      <img src="img/photo7.jpg" alt="">
+      <img src="img/photo8.jpg" alt="">
+      <img src="img/photo9.jpg" alt="">
+    </div>
+    <div id="lightbox-overlay"></div>
   </section>
+
+  <!-- Edytuj tutaj -->
+  <section id="rsvp">
+    <h2>Potwierdź obecność</h2>
+    <p>Cieszymy się, że będziesz z nami w tym wyjątkowym dniu.</p>
+    <!-- TALLY EMBED START: <script data-tally-src="..."></script><div data-tally-embed="[[FORM_ID]]"></div> -->
+  </section>
+
+  <!-- Edytuj tutaj -->
   <footer>
-    <p>Dziękujemy, że jesteście z nami! 💕</p>
-    <p>
-      <a href="https://instagram.com/alekkinia">Instagram</a>
-      <a href="mailto:mail@example.com">E-mail</a>
-    </p>
-    <p class="hashtag">#AleKinaWedding</p>
+    <p class="motto">"Miłość wszystko zwycięża"</p>
+    <p class="contact">Kontakt: <a href="mailto:[[MAIL]]">[[MAIL]]</a> &bull; <a href="https://instagram.com/[[IG_HANDLE]]">@[[IG_HANDLE]]</a></p>
+    <p class="hashtag">#AleksKiniaWedding</p>
   </footer>
+
   <script>
-  // smooth scroll
-  document.querySelectorAll('nav a, button[data-scroll]').forEach(el => {
-    el.addEventListener('click', e => {
-      e.preventDefault();
-      const target = el.getAttribute('href') || el.dataset.scroll;
-      document.querySelector(target).scrollIntoView({behavior:'smooth'});
+  document.querySelectorAll('button[data-scroll]').forEach(btn => {
+    btn.addEventListener('click', e => {
+      document.querySelector(btn.dataset.scroll).scrollIntoView({behavior:'smooth'});
     });
   });
-  // scroll spy
-  const sections = document.querySelectorAll('section,header');
-  const navLinks = document.querySelectorAll('nav a');
-  window.addEventListener('scroll', () => {
-    let index=sections.length;
-    while(--index&&window.scrollY+50<sections[index].offsetTop){}
-    navLinks.forEach((link)=>link.classList.remove('active'));
-    navLinks[index].classList.add('active');
-  });
-  // lightbox
-  const imgs=document.querySelectorAll('.gal-img');
-  imgs.forEach(img=>{
-    img.addEventListener('click',()=>{
-      const lb=document.createElement('div');
-      lb.className='lightbox';
-      const clone=img.cloneNode();
-      lb.appendChild(clone);
-      lb.addEventListener('click',()=>lb.remove());
-      document.body.appendChild(lb);
-    });
-  });
+  const gallery=document.querySelectorAll('.gallery-grid img');
+  const overlay=document.getElementById('lightbox-overlay');
+  gallery.forEach(img=>img.addEventListener('click',()=>{
+    overlay.innerHTML='';
+    overlay.appendChild(img.cloneNode());
+    overlay.classList.add('show');
+  }));
+  overlay.addEventListener('click',()=>overlay.classList.remove('show'));
   </script>
 </body>
 </html>
